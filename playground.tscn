@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cafxn5x8ukj75"]
+[gd_scene load_steps=3 format=3 uid="uid://cafxn5x8ukj75"]
 
 [ext_resource type="PackedScene" uid="uid://rfetlgffo63v" path="res://player.tscn" id="1_rupst"]
+[ext_resource type="PackedScene" uid="uid://bt74ktc31qdxa" path="res://Tilemaps/Sprites/Grass-01.tscn" id="2_wt17y"]
 
 [node name="Playground" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_rupst")]
 position = Vector2(241, 145)
+
+[node name="Grass-01" parent="." instance=ExtResource("2_wt17y")]
+z_index = -1
